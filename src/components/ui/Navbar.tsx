@@ -47,10 +47,11 @@ const Navbar: React.FC = () => {
         {/* CTA */}
         <button
           className="ml-6 px-6 py-2 rounded-[500px] border-[2.3px] border-[#AA587C] 
-          bg-[#FFFFF] flex items-center justify-center text-center
-          shadow-[inset_-8px_-8px_30px_rgba(213,137,80,0.25),inset_8px_8px_16px_rgba(170,88,124,0.2),inset_0_0_20px_rgba(255,255,255,0.3)]
- 
-          text-[#5B434E] font-['Albert Sans'] font-semibold hover:scale-105 transition"
+    bg-[#FFFFF] flex items-center justify-center text-center
+    shadow-[inset_-8px_-8px_30px_rgba(213,137,80,0.25),inset_8px_8px_16px_rgba(170,88,124,0.2),inset_0_0_20px_rgba(255,255,255,0.3)]
+    text-[#5B434E] font-['Albert Sans'] font-semibold
+    transition-all duration-700 ease-in-out
+    hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
         >
           Book Appointment
         </button>

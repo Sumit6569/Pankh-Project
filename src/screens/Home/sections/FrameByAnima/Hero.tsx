@@ -4,23 +4,27 @@ const Hero: React.FC = () => {
   return (
     <section className="relative w-full h-[611px] bg-opacity-92">
       {/* Background gradient overlay */}
-      <div className="absolute w-full inset-0 bg-gradient-to-r from-[#000000] via-[#AA587C] to-[#000000] opacity-[0.92]" />
+      <div className="absolute w-full inset-0 bg-gradient-to-r from-[#41343a] via-[#000000] to-[#000000] opacity-[16]" />
 
       {/* Decorative feather images */}
-      {/* <img
-        className="absolute w-[252px] h-[172px] bottom-0 right-[30%] z-0"
-        alt="Decorative feather"
-        src="/360-f-878505645-wnezftipdiomgplgq8pcjy8npeafpbfe-removebg-previe.png"
-      />
+      {/* Decorative feather images */}
       <img
-        className="absolute w-[170px] h-[213px] top-0 right-0 z-0"
+        className="absolute w-[252px] h-[172px] right-[347px] top-[500px] bottom-0 right-[30%] z-0 opacity-95 rotate-[46deg]
+    mix-blend-soft-light filter blur-[1px]"
         alt="Decorative feather"
-        src="/360-f-878505645-wnezftipdiomgplgq8pcjy8npeafpbfe-removebg-previe-1.png"
-      /> */}
+        src="/side.png"
+      />
 
-      <div className="relative h-[611px] w-[2100px] bg-red-800  z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
+      <img
+        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-25 rotate-[46deg]
+    mix-blend-soft-light filter blur-[1px]"
+        alt="Decorative feather"
+        src="/pic.png"
+      />
+
+      <div className="relative h-[611px] w-[2100px]  z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
         {/* Left Text Content */}
-        <div className="flex-1 space-y-8  bg-yellow-700 h-[426px] w-[576px] mt-[219px]">
+        <div className="flex-1 space-y-8  h-[426px] w-[576px] mt-[219px]">
           <h1 className="space-y-1 font-['Albert Sans']">
             <span className="text-white text-[50px] font-normal leading-tight block font-['Albert Sans']">
               Wings of Change
@@ -35,10 +39,11 @@ const Hero: React.FC = () => {
             <span>inseparable link between your physical </span>
           </p>
           <button
-            className="top-[480px] absolute w-[294px] h-[76px]   bg-[#FFF9FC] text-[#5B434E] text-[25px] 
-  font-semibold tracking-[-0.75px] rounded-[500px] border-[3px] border-[#AA587C]
-  shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]  transition duration-300 ease-in-out
-  hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white"
+            className="top-[480px] absolute w-[291px] h-[73px] text-[#5B434E] text-[25px] 
+    font-semibold tracking-[-0.75px] rounded-[500px] border-[3px] border-[#AA587C]
+    bg-[#FFF9FC] shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]
+    transition-all duration-500 ease-in-out
+    hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
           >
             Book Now
           </button>
@@ -55,7 +60,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 bg-white h-[611px] w-[10px] ml-[9px]  flex justify-end items-center">
+        <div className="flex-1  h-[611px] w-[10px] ml-[9px]  flex justify-end items-center">
           <img
             src="/hero-image.jpg"
             alt="Dancer"
