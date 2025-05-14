@@ -59,7 +59,7 @@ const ApproachSection = () => {
         <h2 className="font-extrabold text-[30px] mb-6">The Approach</h2>
 
         {/* Images */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-10 px-2 sm:px-0">
+        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-10 mr-40 px-2 sm:px-0">
           <img
             src="https://storage.googleapis.com/a1aa/image/94f83f7e-8ca7-435b-7457-9f69106ee6d8.jpg"
             alt="Woman dancing"
@@ -81,8 +81,8 @@ const ApproachSection = () => {
         </div>
 
         {/* Paragraph */}
-        <div className="font-[#FFFFFFCC] py-12 px-4">
-          <div className="w-4xl  mx-auto space-y-1 text-center text-[24px]">
+        <div className="font-[#FFFFFFCC] py-12 bg-yellow-300 px-4 mr-40">
+          <div className="w-9xl  mx-auto space-y-1 text-center text-[21px]">
             <p className=" text-gray-300">
               At The Pankh Project, we believe healing involves your whole self.
               Your thoughts, feelings, physical
