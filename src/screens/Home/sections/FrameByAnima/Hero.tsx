@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-[718px]  top-[29px]  bg-opacity-92">
+    <section className="relative  w-full h-[592px]  top-[15px]  bg-opacity-92 overflow-x-hidden overflow-y-hidden">
       {/* Background gradient overlay */}
       <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#AA587C] via-[#000000] via-[#000000] to-[#000000] opacity-[16]" />
 
@@ -59,11 +59,11 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 ml-[9px] flex justify-end items-center overflow-visible">
+        <div className="flex-1 ml-[9px] h-[378px]  flex justify-end items-center overflow-visible">
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[449px] h-[711px] mr-[9px] mt-[25px] object-cover rounded-tr-[100px] "
+            className="w-[449px] h-[670px] mr-[1px] mt-[20px] object-cover rounded-tr-[100px] "
           />
         </div>
       </div>
