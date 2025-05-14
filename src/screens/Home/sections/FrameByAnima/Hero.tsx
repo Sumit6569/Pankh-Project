@@ -9,15 +9,15 @@ const Hero: React.FC = () => {
       {/* Decorative feather images */}
       {/* Decorative feather images */}
       <img
-        className="absolute w-[252px] h-[172px] right-[347px] top-[500px] bottom-0 right-[30%] z-0 opacity-1 rotate-[46deg]
-    mix-blend-soft-light filter blur-[1px]"
+        className="absolute w-[252px] h-[172px] top-[500px] right-[30%] z-0 opacity-10 mix-blend-normal rotate-[46deg]
+   "
         alt="Decorative feather"
         src="/side.png"
       />
 
       <img
-        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-55 rotate-[46deg]
-    mix-blend-soft-light filter blur-[1px] "
+        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-10 rotate-[46deg]"
+      
         alt="Decorative feather"
         src="/pic.png"
       />
