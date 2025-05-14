@@ -46,24 +46,24 @@ const Hero: React.FC = () => {
           >
             Book Now
           </button>
-          <span className="text-[#FFF2EC] text-[48px] font-bold leading-tight block absolute top-[170px] left-[426px]">
+          <span className="text-[#FFF2EC] text-[48px] font-bold leading-tight block absolute top-[192px] left-[451px]">
             Empowering
           </span>
-          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[320px] left-[475px]">
+          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[346px] left-[512px]">
             healing recognizes the
           </span>
 
-          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[354px] left-[440px]">
+          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[384px] left-[467px]">
             sensation
           </span>
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 ml-[9px] h-[378px]  flex justify-end items-center overflow-visible">
+        <div className="flex-1 ml-[9px] h-[178px]  flex justify-end items-center overflow-visible">
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[449px] h-[670px] mr-[1px] mt-[20px] object-cover rounded-tr-[100px] "
+            className="w-[449px] h-[500px] mr-[1px] mt-[20px] object-cover rounded-tr-[100px] "
           />
         </div>
       </div>
