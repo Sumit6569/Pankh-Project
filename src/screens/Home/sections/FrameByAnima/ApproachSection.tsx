@@ -23,7 +23,7 @@ const ApproachSection = () => {
           position: absolute;
           bottom: 0;
           right: 0;
-          width: 107%;
+          width: 120%;
           height: 100%;
           pointer-events: none;
           border-radius: 0.5rem;

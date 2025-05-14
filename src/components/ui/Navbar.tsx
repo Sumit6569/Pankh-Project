@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Links */}
-      <div className="h-[61px] w-[791px] flex items-center space-x-8 text-[#503440] font-thin text-base">
+      <div className="h-[61px] w-[791px]  flex items-center space-x-8 text-[#503440] font-thin text-base">
         <a
           href="#"
           className="flex items-center space-x-1 text-[#503440] text-[20px] font-normal font-['Albert Sans']"
