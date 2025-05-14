@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="h-[126px] w-[1512px] fixed top-0 z-50 bg-white shadow-md px-10 py-4 flex justify-between items-center overflow-x-hidden">
+    <nav className="h-[126px] w-[1512px] fixed top--1 z-50 bg-white shadow-md px-10 py-4 flex justify-between items-center overflow-x-hidden overflow-y-hidden">
       {/* Logo */}
       <div className="h-[138px] w-[138px] top-[10px] flex items-center space-x-2 ml-[12px]">
         <img
@@ -13,10 +13,10 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Links */}
-      <div className="h-[61px] w-[791px]  flex items-center space-x-8 text-[#503440] font-thin text-base">
+      <div className="h-[61px] w-[791px] ml-12 flex items-center space-x-8 text-[#503440] font-thin text-base overflow-y-hidden overflow-x-hidden">
         <a
           href="#"
-          className="flex items-center space-x-1 text-[#503440] text-[20px] font-normal font-['Albert Sans']"
+          className="flex items-center space-x-1 text-[#503440] text-[20px] font-normal overflow-y-hidden font-['Albert Sans']"
         >
           <img
             src="/game-icons_feather.png"

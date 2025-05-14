@@ -41,6 +41,7 @@ const ApproachSection = () => {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
+          
         }
 
         .text-albert {
@@ -59,29 +60,29 @@ const ApproachSection = () => {
         <h2 className="font-extrabold text-[30px] mb-6">The Approach</h2>
 
         {/* Images */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-10 mr-40 px-2 sm:px-0">
+        <div className="w-[1400px]   flex flex-col sm:flex-row justify-start gap-6 mb-10 mr-19 px-2 sm:px-0">
           <img
-            src="https://storage.googleapis.com/a1aa/image/94f83f7e-8ca7-435b-7457-9f69106ee6d8.jpg"
+            src="/approach1.jpg"
             alt="Woman dancing"
-            className="rounded-2xl w-full sm:w-[300px] object-cover"
-            height="400"
+            className="rounded-[40px] h-[451px] w-full sm:w-[300px] object-cover"
+            height="300"
           />
           <img
-            src="https://storage.googleapis.com/a1aa/image/3ac90e3f-248e-4c05-b00a-d649759f1bdd.jpg"
+            src="approach2.jpg"
             alt="Arms raised"
-            className="rounded-2xl w-full sm:w-[400px] object-cover"
+            className="rounded-[40px] h-[451px] w-full sm:w-[600px] object-cover"
             height="400"
           />
           <img
-            src="https://storage.googleapis.com/a1aa/image/1bd607af-e59e-425c-89a1-363bafc8fc52.jpg"
+            src="approach3.jpg"
             alt="Green outfit"
-            className="rounded-2xl w-full sm:w-[300px] object-cover"
+            className="rounded-[40px] h-[451px] w-full sm:w-[300px] object-cover"
             height="400"
           />
         </div>
 
         {/* Paragraph */}
-        <div className="font-[#FFFFFFCC] py-12 bg-yellow-300 px-4 mr-40">
+        <div className="font-[#FFFFFFCC] w-full py-12  px-4 mr-31">
           <div className="w-9xl  mx-auto space-y-1 text-center text-[21px]">
             <p className=" text-gray-300">
               At The Pankh Project, we believe healing involves your whole self.
