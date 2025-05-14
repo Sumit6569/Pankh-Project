@@ -2,27 +2,27 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-[611px] bg-opacity-92">
+    <section className="relative w-full h-[781px] bg-yellow-600 bg-opacity-92">
       {/* Background gradient overlay */}
-      <div className="absolute w-full inset-0 bg-gradient-to-r from-[#41343a] via-[#000000] to-[#000000] opacity-[16]" />
+      <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#41343a] via-[#000000] to-[#000000] opacity-[16]" />
 
       {/* Decorative feather images */}
       {/* Decorative feather images */}
       <img
-        className="absolute w-[252px] h-[172px] right-[347px] top-[500px] bottom-0 right-[30%] z-0 opacity-95 rotate-[46deg]
+        className="absolute w-[252px] h-[172px] right-[347px] top-[500px] bottom-0 right-[30%] z-0 opacity-1 rotate-[46deg]
     mix-blend-soft-light filter blur-[1px]"
         alt="Decorative feather"
         src="/side.png"
       />
 
       <img
-        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-25 rotate-[46deg]
-    mix-blend-soft-light filter blur-[1px]"
+        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-55 rotate-[46deg]
+    mix-blend-soft-light filter blur-[1px] "
         alt="Decorative feather"
         src="/pic.png"
       />
 
-      <div className="relative h-[611px] w-[2100px]  z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
+      <div className="relative h-[655px] w-[2100px]  z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
         {/* Left Text Content */}
         <div className="flex-1 space-y-8  h-[426px] w-[576px] mt-[219px]">
           <h1 className="space-y-1 font-['Albert Sans']">
@@ -60,11 +60,11 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1  h-[611px] w-[10px] ml-[9px]  flex justify-end items-center">
+        <div className="flex-1 ml-[9px] flex justify-end items-center overflow-visible">
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[359px] h-[611px] mr-[9px] object-cover"
+            className="w-[449px] h-[711px] mr-[9px] mt-[85px] object-cover rounded-tr-[100px] "
           />
         </div>
       </div>
