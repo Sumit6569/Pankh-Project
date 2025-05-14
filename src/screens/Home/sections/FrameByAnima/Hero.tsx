@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-[781px]  top-[30px]  from-[#41343a] via-[#000000] to-[#000000] bg-opacity-92">
+    <section className="relative w-full h-[718px]  top-[29px]  bg-opacity-92">
       {/* Background gradient overlay */}
-      <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#41343a] via-[#000000] to-[#000000] opacity-[16]" />
+      <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#AA587C] via-[#000000] via-[#000000] to-[#000000] opacity-[16]" />
 
       {/* Decorative feather images */}
       {/* Decorative feather images */}
@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
         src="/pic.png"
       />
 
-      <div className="relative h-[655px] w-[2100px]  z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
+      <div className="relative  h-[655px] w-[2100px] from-black/50 to-transparent z-10 bg-blend-soft-light z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
         {/* Left Text Content */}
-        <div className="flex-1 space-y-8  h-[426px] w-[576px] mt-[219px]">
+        <div className="flex-1 space-y-8   h-[426px] w-[576px] mt-[219px]">
           <h1 className="space-y-1 font-['Albert Sans']">
             <span className="text-white text-[50px] font-normal leading-tight block font-['Albert Sans']">
               Wings of Change
