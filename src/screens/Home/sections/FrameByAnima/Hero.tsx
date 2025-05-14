@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-[781px] bg-yellow-600 bg-opacity-92">
+    <section className="relative w-full h-[781px]  top-[30px]  from-[#41343a] via-[#000000] to-[#000000] bg-opacity-92">
       {/* Background gradient overlay */}
       <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#41343a] via-[#000000] to-[#000000] opacity-[16]" />
 
@@ -17,7 +17,6 @@ const Hero: React.FC = () => {
 
       <img
         className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-10 rotate-[46deg]"
-      
         alt="Decorative feather"
         src="/pic.png"
       />
@@ -64,7 +63,7 @@ const Hero: React.FC = () => {
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[449px] h-[711px] mr-[9px] mt-[85px] object-cover rounded-tr-[100px] "
+            className="w-[449px] h-[711px] mr-[9px] mt-[25px] object-cover rounded-tr-[100px] "
           />
         </div>
       </div>
