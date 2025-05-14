@@ -6,6 +6,10 @@ import ApproachSection from "./screens/Home/sections/FrameByAnima/ApproachSectio
 import AboutSection from "./screens/Home/sections/FrameByAnima/AboutSection";
 import Cards from "./screens/Home/sections/FrameByAnima/Cards";
 import Hero from "./screens/Home/sections/FrameByAnima/Hero";
+import VideoSec from "./screens/Home/sections/FrameByAnima/VideoSec";
+import Blogs from "./screens/Home/sections/FrameByAnima/Blogs";
+import ScrollCard from "./screens/Home/sections/FrameByAnima/ScrollCard";
+import DropDown from "./screens/Home/sections/FrameByAnima/DropDown";
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <Navbar />
@@ -14,5 +18,9 @@ createRoot(document.getElementById("app") as HTMLElement).render(
     <AboutSection />
     <ApproachSection />
     <Cards />
+    <VideoSec />
+    <Blogs/>
+    <ScrollCard />
+    <DropDown />
   </StrictMode>
 );
