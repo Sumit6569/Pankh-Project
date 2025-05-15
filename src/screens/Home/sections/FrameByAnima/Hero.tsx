@@ -2,13 +2,13 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-auto bg-black text-white py-20 px-4 overflow-hidden">
+    <section className="relative w-full h-[700px] bg-black text-white py-20 px-4 overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#AA587C] via-black to-black opacity-90 z-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-6">
         {/* Left Text Content */}
-        <div className="flex-1 text-left space-y-8 max-w-[976px] ">
+        <div className="flex-1 text-left space-y-8 max-w-[976px] mt-11">
           <h1 className="text-2xl md:text-[50px] leading-tight font-['Albert Sans']">
             Wings of Change <span className="font-bold">Empowering</span>{" "}
             <span className="font-bold">Your Inner Transformation</span>
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[300px] md:w-[449px] h-auto object-cover rounded-tr-[100px] mt-6 md:mt-0"
+            className="w-[300px] md:w-[449px] h-[620px] object-cover rounded-tr-[100px] mt-6 md:mt-0"
           />
         </div>
       </div>
