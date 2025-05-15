@@ -73,6 +73,87 @@ const Footer = () => {
       <footer className="text-center text-[#b35a5a] text-lg pb-6 font-normal">
         Copyright © 2024 The Pankh Project - All Rights Reserved.
       </footer>
+
+      <style>{`
+        @media (max-width: 768px) {
+          /* Layout adjustments */
+          .flex.flex-col.md\\:flex-row {
+            gap: 3rem !important;
+          }
+
+          /* Image container */
+          .w-[400px] {
+            width: 300px !important;
+            height: 300px !important;
+          }
+
+          /* Quote text */
+          .text-[28px] {
+            font-size: 24px !important;
+            line-height: 36px !important;
+            padding: 0 1rem !important;
+          }
+
+          /* Quick links and contact section */
+          .text-xl {
+            font-size: 1.125rem !important;
+          }
+
+          .text-lg {
+            font-size: 1rem !important;
+          }
+
+          .space-y-3 > li {
+            font-size: 0.875rem !important;
+          }
+
+          /* Social icons */
+          .text-2xl {
+            font-size: 1.25rem !important;
+          }
+
+          /* Footer copyright */
+          footer.text-lg {
+            font-size: 0.875rem !important;
+            padding-bottom: 1rem !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          /* Layout adjustments */
+          .flex.flex-col.md\\:flex-row {
+            gap: 2rem !important;
+          }
+
+          /* Image container */
+          .w-[400px] {
+            width: 250px !important;
+            height: 250px !important;
+          }
+
+          /* Quote text */
+          .text-[28px] {
+            font-size: 20px !important;
+            line-height: 32px !important;
+          }
+
+          /* Quick links and contact section */
+          .max-w-xs {
+            width: 100% !important;
+            max-width: 280px !important;
+          }
+
+          /* Social icons container */
+          .flex.gap-4 {
+            justify-content: center !important;
+          }
+
+          /* Footer copyright */
+          footer.text-lg {
+            font-size: 0.75rem !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const AboutSection = () => {
 
       <div className="flex flex-col md:flex-row gap-[56px] items-start">
         <img
-          src="/AboutModel.jpg" // Replace with actual image
+          src="/AboutModel.jpg"
           alt="Tarini"
           className="w-[392px]  h-[401px] rounded-xl object-cover"
         />
@@ -35,6 +35,45 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
+
+      {/* Responsive Media Query */}
+      <style>{`
+        @media (max-width: 768px) {
+          section {
+            height: auto !important;
+            padding: 1.5rem 1.2rem !important;
+            object-fit: cover !important;
+          }
+
+          section h1 {
+            font-size: 2.2rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 2rem !important;
+          }
+
+          section img {
+            width: 100% !important;
+            height: 300px !important;
+            object-fit: cover !important;
+          }
+
+          section h2 {
+            font-size: 1.6rem !important;
+            margin-bottom: 1.5rem !important;
+          }
+
+          section p {
+            font-size: 1rem !important;
+            line-height: 1.7 !important;
+            max-width: 100% !important;
+          }
+
+          section .flex.md\\:flex-row {
+            flex-direction: column !important;
+            gap: 2rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

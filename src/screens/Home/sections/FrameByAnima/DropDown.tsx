@@ -73,7 +73,7 @@ const DropDown = () => {
     <div className="relative bg-white flex items-center justify-center px-4 py-12 font-[Inter]">
       <img
         alt="Feather left"
-        className="absolute left-0 mr-[130px] top-1/2 -translate-y-1/2 max-w-[350px] w-full h-[350px]  pointer-events-none select-none"
+        className="absolute -left-48   mr-[130px] top-1/2 -translate-y-1/2 max-w-[450px] w-full h-[450px]  pointer-events-none select-none"
         src="/birdleft.png"
         style={{
           filter:
@@ -82,7 +82,7 @@ const DropDown = () => {
       />
       <img
         alt="Feather right"
-        className="absolute right-0 bottom-0 w-[150px] h-[150px] pointer-events-none select-none"
+        className="absolute -right-20 bottom-0 w-[250px] h-[250px] pointer-events-none select-none"
         src="/birdright.png"
         style={{
           filter:

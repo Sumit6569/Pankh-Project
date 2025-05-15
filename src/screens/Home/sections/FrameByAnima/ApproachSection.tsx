@@ -10,6 +10,7 @@ const ApproachSection = () => {
 
         body {
           font-family: "Inter", sans-serif;
+          overflow-x: hidden;
         }
 
         .inner-shadow-bottom-right {
@@ -47,6 +48,124 @@ const ApproachSection = () => {
         .text-albert {
           font-family: "Alberts Sons", cursive;
         }
+
+        @media (max-width: 768px) {
+          .relative.max-w-7xl {
+            padding: 2rem 1rem !important;
+          }
+
+          h2.font-extrabold {
+            font-size: 24px !important;
+            margin-bottom: 2rem !important;
+          }
+
+          .w-[1400px] {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 1rem !important;
+          }
+
+          img.rounded-[40px] {
+            height: 300px !important;
+            margin-bottom: 1rem !important;
+          }
+
+          .text-[21px] {
+            font-size: 16px !important;
+            padding: 0 1rem !important;
+          }
+
+          .text-3xl {
+            font-size: 24px !important;
+            padding: 0 1rem !important;
+            margin-top: 2rem !important;
+          }
+
+          .gradient-border {
+            flex-direction: column !important;
+            gap: 2rem !important;
+            padding: 0 1rem !important;
+          }
+
+          .content {
+            padding: 1.25rem 1rem !important;
+            margin-bottom: 1rem !important;
+            max-width: 320px !important;
+            margin: 0 auto !important;
+            padding: 1rem !important;
+            min-height: 200px !important;  /* Reduced height */
+          }
+
+          .content p {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+          }
+
+          .flex.flex-col.sm\:flex-row img {
+            height: 180px !important;
+            width: 100% !important;
+            border-radius: 16px !important;
+          }
+
+          .content {
+            max-width: 320px !important;
+            margin: 0 auto !important;
+            padding: 1rem !important;
+          }
+
+          .gradient-border {
+            gap: 1.5rem !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          img.rounded-[40px] {
+            height: 50px !important;
+          }
+
+          .text-[21px] {
+            font-size: 14px !important;
+          }
+
+          .text-3xl {
+            font-size: 20px !important;
+          }
+
+          .content {
+            padding: 1rem !important;
+            max-width: 280px !important;
+            padding: 0.75rem !important;
+            min-height: 180px !important;  /* Further reduced for mobile */
+          }
+
+          .content h4 {
+            font-size: 16px !important;
+            margin-bottom: 0.5rem !important;
+          }
+
+          .content i {
+            font-size: 24px !important;
+            margin-bottom: 0.5rem !important;
+          }
+
+          .content p {
+            font-size: 13px !important;
+            line-height: 1.3 !important;
+          }
+
+          .flex.flex-col.sm\:flex-row img {
+            height: 150px !important;
+          }
+
+          .content {
+            max-width: 280px !important;
+            padding: 0.75rem !important;
+          }
+
+          .gradient-border {
+            gap: 1rem !important;
+          }
+        }
       `}</style>
 
       {/* Background pattern */}
@@ -60,25 +179,30 @@ const ApproachSection = () => {
         <h2 className="font-extrabold text-[30px] mb-6">The Approach</h2>
 
         {/* Images */}
-        <div className="w-[1400px]   flex flex-col sm:flex-row justify-start gap-6 mb-10 mr-19 px-2 sm:px-0">
-          <img
-            src="/approach1.jpg"
-            alt="Woman dancing"
-            className="rounded-[40px] h-[451px] w-full sm:w-[300px] object-cover"
-            height="300"
-          />
-          <img
-            src="approach2.jpg"
-            alt="Arms raised"
-            className="rounded-[40px] h-[451px] w-full sm:w-[600px] object-cover"
-            height="400"
-          />
-          <img
-            src="approach3.jpg"
-            alt="Green outfit"
-            className="rounded-[40px] h-[451px] w-full sm:w-[300px] object-cover"
-            height="400"
-          />
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto max-w-6xl">
+          <div className="w-full sm:w-[250px]">
+            <img
+              src="/approach1.jpg"
+              alt="Woman dancing"
+              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          <div className="w-full sm:w-[500px]">
+            <img
+              src="/approach2.jpg"
+              alt="Arms raised"
+              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          <div className="w-full sm:w-[250px]">
+            <img
+              src="/approach3.jpg"
+              alt="Green outfit"
+              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
         </div>
 
         {/* Paragraph */}
@@ -109,10 +233,10 @@ const ApproachSection = () => {
         </div>
 
         {/* Cards */}
-        <div className="gradient-border flex flex-col sm:flex-row justify-center gap-8 max-w-5xl mx-auto px-2 sm:px-0">
+        <div className="gradient-border flex flex-col sm:flex-row justify-center gap-6 max-w-4xl mx-auto px-2 sm:px-0">
           {/* Card 1 */}
-          <div className="flex-1 max-w-md mx-auto sm:mx-0">
-            <div className="content text-center">
+          <div className="flex-1 max-w-sm mx-auto sm:mx-0">
+            <div className="content text-center py-6 px-4">
               <div className="flex flex-col items-center justify-center mb-4">
                 <i className="fas fa-bolt text-4xl mb-3 bg-gradient-to-r from-[#FD8950] to-[#ffb17c] bg-clip-text text-transparent"></i>
                 <h4 className="text-xl font-bold bg-gradient-to-r from-[#FD8950] to-[#ffb17c] bg-clip-text text-transparent">
@@ -128,8 +252,8 @@ const ApproachSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex-1 max-w-md mx-auto sm:mx-0">
-            <div className="content text-center">
+          <div className="flex-1 max-w-sm mx-auto sm:mx-0">
+            <div className="content text-center py-6 px-4">
               <div className="flex flex-col items-center justify-center mb-4">
                 <i
                   className="fas fa-feather-alt text-4xl mb-3 bg-gradient-to-r from-[#FD8950] to-[#ffb17c]
