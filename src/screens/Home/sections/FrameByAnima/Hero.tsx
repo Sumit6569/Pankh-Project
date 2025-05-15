@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             flex-direction: column !important;
             align-items: center !important;
             text-align: center !important;
-            ovrflow: hidden !important;
+            overflow-x: hidden !important;
           }
 
           section h1 {

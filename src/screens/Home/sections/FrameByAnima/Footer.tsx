@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className="min-h-screen flex flex-col justify-between"
+      className="min-h-screen flex flex-col justify-between overflow-x-hidden"
       style={{
         fontFamily: "Montserrat, sans-serif",
         backgroundColor: "#fde9d7",

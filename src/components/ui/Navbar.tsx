@@ -82,9 +82,10 @@ const Navbar: React.FC = () => {
       <style>{`
         @media (max-width: 768px) {
           nav {
-            width: 92% !important;
+            width: 89% !important;
             height: auto !important;
             padding: 1rem 1.5rem !important;
+            overflow-x: hidden !important;
           }
           /* Show hamburger on small */
           button.sm\\:hidden {

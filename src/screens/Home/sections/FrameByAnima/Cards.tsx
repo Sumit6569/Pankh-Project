@@ -6,10 +6,15 @@ export default function GuidedByTarini() {
       <style>
         {`
           @layer utilities {
+          body {
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+          }
             @media (max-width: 640px) {
               .guided-card-icon {
                 width: 40px !important;
                 height: 40px !important;
+
               }
 
               .guided-card-left {

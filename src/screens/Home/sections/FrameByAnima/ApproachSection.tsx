@@ -11,6 +11,7 @@ const ApproachSection = () => {
         body {
           font-family: "Inter", sans-serif;
           overflow-x: hidden;
+          
         }
 
         .inner-shadow-bottom-right {

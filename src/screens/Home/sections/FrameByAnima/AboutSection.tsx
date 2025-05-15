@@ -43,6 +43,7 @@ const AboutSection = () => {
             height: auto !important;
             padding: 1.5rem 1.2rem !important;
             object-fit: cover !important;
+            overflow-x: hidden !important;
           }
 
           section h1 {
