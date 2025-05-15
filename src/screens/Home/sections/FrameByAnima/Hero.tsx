@@ -2,68 +2,39 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative  w-full h-[592px]  top-[15px]  bg-opacity-92 overflow-x-hidden overflow-y-hidden">
+    <section className="relative w-full h-auto bg-black text-white py-20 px-4 overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute h-[681px] w-full inset-0 bg-gradient-to-r from-[#AA587C] via-[#000000] via-[#000000] to-[#000000] opacity-[16]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#AA587C] via-black to-black opacity-90 z-0" />
 
-      {/* Decorative feather images */}
-      {/* Decorative feather images */}
-      <img
-        className="absolute w-[252px] h-[172px] top-[550px] right-[30%] z-0 opacity-10 mix-blend-normal rotate-[46deg]
-   "
-        alt="Decorative feather"
-        src="/side.png"
-      />
-
-      <img
-        className="absolute w-[170px] h-[213px] top-0 right-0 z-0 opacity-10 rotate-[46deg]"
-        alt="Decorative feather"
-        src="/pic.png"
-      />
-
-      <div className="relative  h-[655px] w-[2100px] from-black/50 to-transparent z-10 bg-blend-soft-light z-10 max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center gap-16">
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-6">
         {/* Left Text Content */}
-        <div className="flex-1 space-y-8   h-[426px] w-[576px] mt-[219px]">
-          <h1 className="space-y-1 font-['Albert Sans']">
-            <span className="text-white text-[50px] font-normal leading-tight block font-['Albert Sans']">
-              Wings of Change
-            </span>
-
-            <span className="text-[#FFF2EC] text-[45px] font-bold leading-tight block mt-[70px] font-['Albert Sans']">
-              Your Inner Transformation
-            </span>
+        <div className="flex-1 text-left space-y-8 max-w-[976px] ">
+          <h1 className="text-2xl md:text-[50px] leading-tight font-['Albert Sans']">
+            Wings of Change <span className="font-bold">Empowering</span>{" "}
+            <span className="font-bold">Your Inner Transformation</span>
           </h1>
-          <p className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] mt-3 font-albert-sans flex flex-col ">
-            <span>Step into The Pankh Project, where holistic </span>
-            <span>inseparable link between your physical </span>
+
+          <p className="text-[18px] md:text-[20px] text-[#efefef] font-['Albert Sans'] leading-relaxed max-w-[480px]">
+            Step into The Pankh Project, where holistic healing recognizes the
+            inseparable link between your physical sensation
           </p>
+
           <button
-            className="top-[480px] absolute w-[291px] h-[73px] text-[#5B434E] text-[25px] 
-    font-semibold tracking-[-0.75px] rounded-[500px] border-[3px] border-[#AA587C]
-    bg-[#FFF9FC] shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]
-    transition-all duration-500 ease-in-out
-    hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
+            className="mt-4 w-[200px] h-[60px] text-[#5B434E] text-[20px] font-semibold rounded-full border-[3px] border-[#AA587C]
+            bg-[#FFF9FC] shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]
+            transition duration-300 ease-in-out
+            hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
           >
             Book Now
           </button>
-          <span className="text-[#FFF2EC] text-[48px] font-bold leading-tight block absolute top-[192px] left-[451px]">
-            Empowering
-          </span>
-          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[346px] left-[512px]">
-            healing recognizes the
-          </span>
-
-          <span className="text-[23px] text-[#efefef] leading-relaxed max-w-[480px] absolute mt-4 font-['Albert Sans'] flex flex-col gap-2 top-[384px] left-[467px]">
-            sensation
-          </span>
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 ml-[9px] h-[178px]  flex justify-end items-center overflow-visible">
+        <div className="flex-1 flex justify-center md:justify-end">
           <img
             src="/hero-image.jpg"
             alt="Dancer"
-            className="w-[449px] h-[500px] mr-[1px] mt-[20px] object-cover rounded-tr-[100px] "
+            className="w-[300px] md:w-[449px] h-auto object-cover rounded-tr-[100px] mt-6 md:mt-0"
           />
         </div>
       </div>

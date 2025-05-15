@@ -48,11 +48,16 @@ const FAQItem = ({ faq, isOpen, onClick }) => {
           <FaChevronDown className="text-[#d87a6a]" />
         )}
       </button>
-      {isOpen && (
-        <div className="mt-2 px-4 py-3 border border-[#f0a07a] rounded-md text-[#d87a6a] font-medium text-sm leading-6 animate-fade-in">
-          {faq.answer}
-        </div>
-      )}
+
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen
+            ? "max-h-[500px] opacity-100 mt-2 py-3"
+            : "max-h-0 opacity-0 py-0"
+        } px-4 border border-[#f0a07a] rounded-md text-[#d87a6a] font-medium text-sm leading-6`}
+      >
+        <div className="transition-opacity duration-500">{faq.answer}</div>
+      </div>
     </div>
   );
 };
@@ -65,29 +70,26 @@ const DropDown = () => {
   };
 
   return (
-    <div className="relative bg-white min-h-screen flex items-center justify-center px-4 py-12 font-[Inter]">
-      {/* Left Feather */}
+    <div className="relative bg-white flex items-center justify-center px-4 py-12 font-[Inter]">
       <img
         alt="Feather left"
-        className="absolute left-0 top-1/2 -translate-y-1/2 max-w-[150px] max-h-[150px] pointer-events-none select-none"
-        src="https://storage.googleapis.com/a1aa/image/8e9ed98e-d259-49c3-2ced-966b65e3bf90.jpg"
+        className="absolute left-0 mr-[130px] top-1/2 -translate-y-1/2 max-w-[350px] w-full h-[350px]  pointer-events-none select-none"
+        src="/birdleft.png"
         style={{
           filter:
             "brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(0%) hue-rotate(176deg) brightness(102%) contrast(89%)",
         }}
       />
-      {/* Right Feather */}
       <img
         alt="Feather right"
-        className="absolute right-0 bottom-0 max-w-[150px] max-h-[150px] pointer-events-none select-none"
-        src="https://storage.googleapis.com/a1aa/image/6b8c85fd-cb61-4b9d-1b5d-0c9775f10543.jpg"
+        className="absolute right-0 bottom-0 w-[150px] h-[150px] pointer-events-none select-none"
+        src="/birdright.png"
         style={{
           filter:
             "brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(0%) hue-rotate(176deg) brightness(102%) contrast(89%)",
         }}
       />
 
-      {/* FAQ Content */}
       <div className="max-w-3xl w-full text-center">
         <div className="mb-4 flex justify-center">
           <div className="w-12 h-1 rounded-full bg-[#9b4d6a]"></div>

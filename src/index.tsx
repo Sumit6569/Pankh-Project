@@ -10,6 +10,7 @@ import VideoSec from "./screens/Home/sections/FrameByAnima/VideoSec";
 import Blogs from "./screens/Home/sections/FrameByAnima/Blogs";
 import ScrollCard from "./screens/Home/sections/FrameByAnima/ScrollCard";
 import DropDown from "./screens/Home/sections/FrameByAnima/DropDown";
+import Footer from "./screens/Home/sections/FrameByAnima/Footer";
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <Navbar />
@@ -22,5 +23,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
     <Blogs/>
     <ScrollCard />
     <DropDown />
+    <Footer />
+    
   </StrictMode>
 );
