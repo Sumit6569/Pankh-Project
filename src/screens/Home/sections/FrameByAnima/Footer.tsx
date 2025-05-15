@@ -10,7 +10,8 @@ const Footer = () => {
       }}
     >
       <div className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto px-6 py-20 gap-20">
-        <div className="w-[400px] h-[400px] flex-shrink-0 shadow-left">
+        {/* Image Container */}
+        <div className="footer-image-container w-[400px] h-[400px] flex-shrink-0 shadow-left">
           <img
             src="https://storage.googleapis.com/a1aa/image/f230e695-acf8-4f87-2a07-fe4228eca2b8.jpg"
             alt="A hand with a small black paw tattoo on the wrist"
@@ -18,8 +19,9 @@ const Footer = () => {
           />
         </div>
 
+        {/* Quote Text */}
         <div
-          className="max-w-xl text-[#4a3a47] text-center md:text-left text-[28px] leading-[40px]"
+          className="footer-quote-text max-w-xl text-[#4a3a47] text-center md:text-left text-[28px] leading-[40px]"
           style={{ fontFamily: "Merriweather, serif" }}
         >
           <p>“When the moral judgment is removed,</p>
@@ -29,7 +31,8 @@ const Footer = () => {
           <p className="font-semibold">Peter Levine”</p>
         </div>
 
-        <div className="text-[#4a3a47] flex flex-col gap-8 text-lg font-semibold max-w-xs">
+        {/* Quick Links & Contact */}
+        <div className="footer-links text-[#4a3a47] flex flex-col gap-8 text-lg font-semibold max-w-xs">
           <div>
             <h3 className="text-xl mb-4 font-bold">Quick Links</h3>
             <ul className="space-y-3 font-normal">
@@ -43,7 +46,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-xl mb-4 font-bold">Get in Touch</h3>
-            <div className="flex gap-4 text-2xl">
+            <div className="footer-icons flex gap-4 text-2xl">
               <a
                 href="#"
                 aria-label="Email"
@@ -74,81 +77,46 @@ const Footer = () => {
         Copyright © 2024 The Pankh Project - All Rights Reserved.
       </footer>
 
+      {/* Media Queries */}
       <style>{`
         @media (max-width: 768px) {
-          /* Layout adjustments */
-          .flex.flex-col.md\\:flex-row {
-            gap: 3rem !important;
-          }
-
-          /* Image container */
-          .w-[400px] {
+          .footer-image-container {
             width: 300px !important;
             height: 300px !important;
           }
 
-          /* Quote text */
-          .text-[28px] {
-            font-size: 24px !important;
-            line-height: 36px !important;
+          .footer-quote-text {
+            font-size: 22px !important;
+            line-height: 34px !important;
             padding: 0 1rem !important;
+            text-align: center !important;
           }
 
-          /* Quick links and contact section */
-          .text-xl {
-            font-size: 1.125rem !important;
+          .footer-links {
+            align-items: center !important;
+            text-align: center !important;
           }
 
-          .text-lg {
-            font-size: 1rem !important;
-          }
-
-          .space-y-3 > li {
-            font-size: 0.875rem !important;
-          }
-
-          /* Social icons */
-          .text-2xl {
-            font-size: 1.25rem !important;
-          }
-
-          /* Footer copyright */
-          footer.text-lg {
-            font-size: 0.875rem !important;
-            padding-bottom: 1rem !important;
+          .footer-icons {
+            justify-content: center !important;
           }
         }
 
         @media (max-width: 480px) {
-          /* Layout adjustments */
-          .flex.flex-col.md\\:flex-row {
-            gap: 2rem !important;
+          .footer-image-container {
+            width: 240px !important;
+            height: 240px !important;
           }
 
-          /* Image container */
-          .w-[400px] {
-            width: 250px !important;
-            height: 250px !important;
+          .footer-quote-text {
+            font-size: 18px !important;
+            line-height: 30px !important;
           }
 
-          /* Quote text */
-          .text-[28px] {
-            font-size: 20px !important;
-            line-height: 32px !important;
+          .footer-links {
+            font-size: 14px !important;
           }
 
-          /* Quick links and contact section */
-          .max-w-xs {
-            width: 100% !important;
-            max-width: 280px !important;
-          }
-
-          /* Social icons container */
-          .flex.gap-4 {
-            justify-content: center !important;
-          }
-
-          /* Footer copyright */
           footer.text-lg {
             font-size: 0.75rem !important;
           }
