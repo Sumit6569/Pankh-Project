@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
       <style>{`
         @media (max-width: 768px) {
           nav {
-            width: 89% !important;
+            width: 108% !important;
             height: auto !important;
             padding: 1rem 1.5rem !important;
             overflow-x: hidden !important;
