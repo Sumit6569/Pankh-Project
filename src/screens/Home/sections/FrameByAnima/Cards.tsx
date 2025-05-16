@@ -6,31 +6,55 @@ export default function GuidedByTarini() {
       <style>
         {`
           @layer utilities {
-          body {
-            font-family: "Inter", sans-serif;
-            overflow-x: hidden;
-          }
-            @media (max-width: 640px) {
-              .guided-card-icon {
-                width: 40px !important;
-                height: 40px !important;
+            body {
+              font-family: "Inter", sans-serif;
+              overflow-x: hidden;
+            }
 
+            @media (max-width: 640px) {
+              .guided-card {
+                flex-direction: row !important;
+                width: 320% !important;
+                
+                margin-left: -90px !important;
+                
+                margin-right: -100px !important;
               }
 
               .guided-card-left {
-                padding-top: 37px !important;
-                padding-bottom: 37px !important;
+                width: 31% !important;
+                
+               
+                justify-content: center !important;
+              }
+
+              .guided-card-icon {
+                width: 31px !important;
+                height: 31px !important;
+                padding-right: 5px !important;
               }
 
               .guided-card-text {
+                font-size: 9px !important;
                 text-align: center !important;
+                margin-left: -25px !important;
+                padding-right: 10px !important;
+             
                 
               }
-              
+
+              .guided-card-p {
+                width: 65% !important;
+                padding: 5px 6px !important;
+                margin-left: -40px !important;
+                
+              }
+
               .guided-card-description {
-          font-size: 13px !important;
-          line-height: 1.4 !important;
-        }
+                font-size: 9px !important;
+                line-height: 1.4 !important;
+                
+              }
             }
           }
         `}
@@ -74,7 +98,7 @@ export default function GuidedByTarini() {
           ].map((item, i) => (
             <div
               key={i}
-              className="flex flex-col sm:flex-row border border-gray-300 rounded-lg overflow-hidden"
+              className="guided-card flex flex-col sm:flex-row border border-gray-300 rounded-lg overflow-hidden"
             >
               {/* Left Section */}
               <div className="guided-card-left sm:w-[510px] w-full h-auto bg-gradient-to-r from-[#9b5f7f] to-[#f07e4a] flex items-center gap-4 text-white px-6 py-4 sm:py-0 sm:h-[125px]">
@@ -89,8 +113,8 @@ export default function GuidedByTarini() {
               </div>
 
               {/* Right Section */}
-              <div className="guided-card-p bg-white w-full flex items-center p-6  text-gray-700 leading-relaxed">
-                <p className="guided-card-description ">{item.text}</p>
+              <div className="guided-card-p bg-white w-full flex items-center p-6 text-gray-700 leading-relaxed">
+                <p className="guided-card-description">{item.text}</p>
               </div>
             </div>
           ))}

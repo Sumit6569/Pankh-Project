@@ -55,7 +55,8 @@ const VideoSec = () => {
       <div className="w-full max-w-3xl rounded-xl overflow-hidden shadow-lg z-10">
         <iframe
           className="w-full aspect-video rounded-xl"
-          src="https://www.youtube.com/embed/6q6q6q6q6q6"
+          src="https://www.youtube.com/embed/MY5SatbZMAo"
+
           title="The Pankh Project TEDx Talk video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
