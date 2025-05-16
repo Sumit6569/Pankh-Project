@@ -12,7 +12,7 @@ const BlogsSection = () => {
         {/* Blog Card 1 */}
         <article className="border border-[#E6D9D9] rounded-md overflow-hidden">
           <img
-            src="https://storage.googleapis.com/a1aa/image/9b6614a1-4f16-4e99-f9a0-d0542367146d.jpg"
+            src="/blog1.png"
             alt="Close-up of butterfly lifecycle stages from caterpillar to butterfly on a branch"
             className="w-full h-48 object-cover"
             width={600}
@@ -42,7 +42,7 @@ const BlogsSection = () => {
         {/* Blog Card 2 */}
         <article className="border border-[#E6D9D9] rounded-md overflow-hidden">
           <img
-            src="https://storage.googleapis.com/a1aa/image/e4825820-50a3-4be8-101f-ff7464a52ff3.jpg"
+            src="/blog2.png"
             alt="Woman in pink hoodie talking to therapist in a bright room with bookshelves"
             className="w-full h-48 object-cover"
             width={600}
@@ -72,7 +72,7 @@ const BlogsSection = () => {
         {/* Blog Card 3 */}
         <article className="border border-[#E6D9D9] rounded-md overflow-hidden">
           <img
-            src="https://storage.googleapis.com/a1aa/image/4227c1ed-ac45-411a-3228-78c24777dc9a.jpg"
+            src="/blog3.png"
             alt="Woman with glasses journaling on a couch in a cozy living room"
             className="w-full h-48 object-cover"
             width={600}

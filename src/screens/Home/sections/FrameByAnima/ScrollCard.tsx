@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Kelly H",
     stars: 5,
-    text: `It's hard to express into words what Jo has done for me in the time I have worked with her. I'm beyond grateful for the help and support I have received through both the Compassionate Inquiry and Biodynamic Craniosacral Therapy and would highly recommend Jo to anyone who is ready to look inward and heal. The combination of her extensive knowledge, intuition, friendly, non-judgemental approach has created such a safe and supportive space. Walking into her treatment room is almost instantly relaxing; the world is left at the door. With each session I've felt lighter, brighter and brought back home to myself again and`,
+    text: `It's hard to express into words what Jo has done for me in the time I have worked with her. I'm beyond grateful for the help and support I have received through both the Compassionate Inquiry and Biodynamic Craniosacral Therapy and would highly recommend Jo to anyone who is ready to look inward and heal. The combination of her extensive knowledge, intuition, friendly, non-judgemental approach has created such a safe and supportive space. Walking into her treatment room is almost instantly relaxing; the world is left at the door.`,
   },
 ];
 

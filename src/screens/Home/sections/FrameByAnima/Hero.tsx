@@ -10,18 +10,18 @@ const Hero: React.FC = () => {
       <img
         src="/side.png"
         alt="Feather"
-        className="absolute w-[120px] md:w-[200px] h-[120px] md:h-[150px] bottom-0 left-[5%] opacity-10 rotate-[46deg] z-0 hidden sm:block ml-12"
-      />
-      <img
-        src="/pic.png"
-        alt="Feather"
-        className="absolute w-[130px] md:w-[170px] h-[160px] md:h-[213px] top-0 right-0 opacity-10 rotate-[46deg] z-0 hidden sm:block ml-[80px]"
+        className="feather-left absolute w-[420px] md:w-[200px] h-[380px] md:h-[150px] bottom-0 left-[5%] opacity-10 rotate-[-66deg]  ml-[700px]"
       />
 
+      <img
+        src="/pic2.png"
+        alt="Feather"
+        className="feather-right absolute w-[130px] md:w-[170px] h-[160px] md:h-[213px] top-16 right-0 opacity-10 rotate-[46deg] z-10 hidden sm:block ml-[80px]"
+      />
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-4 md:px-6">
         {/* Left Content */}
-        <div className="flex-1 text-center md:text-left space-y-6 max-w-[600px]">
+        <div className=" hero-content flex-1 text-center md:text-left space-y-6 max-w-[600px]">
           <h1 className="text-3xl md:text-[50px] leading-snug font-['Albert Sans']">
             Wings of Change <span className="font-extrabold">Empowering</span>{" "}
             <span className="font-extrabold">Your Inner Transformation</span>
@@ -56,6 +56,8 @@ const Hero: React.FC = () => {
   @media (max-width: 767.98px) {
   .hero-image{
     margin-top: 0 !important;
+    width: 140% !important;
+    
   }
     .hero-section {
       height: 125vh !important;
@@ -65,7 +67,7 @@ const Hero: React.FC = () => {
 
     .hero-content h1 {
       font-size: 1.8rem !important;
-      margin-top: 9rem !important;
+      margin-top: 8rem !important;
     }
 
     .hero-content p {
@@ -79,6 +81,34 @@ const Hero: React.FC = () => {
       height: 50px !important;
       font-size: 1rem !important;
     }
+       .feather-left {
+      margin-left: 0 !important;
+      left: 20px !important;
+      width: 160px !important;
+      height: 170px !important;
+      display: block !important;
+      margin-bottom: 6px !important;
+      opacity: 0.1 !important;
+      transform: rotate(-45deg) !important;
+     
+      
+
+      margin-top: 13px !important;
+      margin-right: 30px !important;
+
+    }
+
+    .feather-right {
+  
+  width: 100px !important;
+  height: 100px !important;
+  top: 10px !important;
+  opacity: 0.3 !important;
+  z-index: 60 !important;
+  margin-top: 80px !important;
+}
+
+
   }
 `}</style>
     </section>
