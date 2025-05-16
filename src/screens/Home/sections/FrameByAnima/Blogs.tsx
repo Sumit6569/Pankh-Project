@@ -31,7 +31,7 @@ const BlogsSection = () => {
               <span>May 20th 2020</span>
               <a
                 href="#"
-                className="text-[#9B5B6B] font-semibold hover:underline"
+                className="bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline"
               >
                 Read more
               </a>
@@ -61,7 +61,7 @@ const BlogsSection = () => {
               <span>May 20th 2020</span>
               <a
                 href="#"
-                className="text-[#9B5B6B] font-semibold hover:underline"
+                className="bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline"
               >
                 Read more
               </a>
@@ -91,7 +91,7 @@ const BlogsSection = () => {
               <span>May 20th 2020</span>
               <a
                 href="#"
-                className="text-[#9B5B6B] font-semibold hover:underline"
+                className="bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline"
               >
                 Read more
               </a>

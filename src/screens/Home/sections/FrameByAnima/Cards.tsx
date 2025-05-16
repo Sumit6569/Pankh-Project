@@ -89,8 +89,8 @@ export default function GuidedByTarini() {
               </div>
 
               {/* Right Section */}
-              <div className="guided-card-p bg-white w-full flex items-center p-6 text-sm text-gray-700 leading-relaxed">
-                <p className="guided-card-description">{item.text}</p>
+              <div className="guided-card-p bg-white w-full flex items-center p-6  text-gray-700 leading-relaxed">
+                <p className="guided-card-description ">{item.text}</p>
               </div>
             </div>
           ))}

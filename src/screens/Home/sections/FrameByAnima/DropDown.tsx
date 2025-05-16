@@ -37,8 +37,8 @@ const FAQItem = ({ faq, isOpen, onClick }) => {
         onClick={onClick}
         className={`w-full flex justify-between items-center border rounded-md px-4 py-3 font-semibold text-sm leading-5 transition-colors ${
           isOpen
-            ? "bg-[#fff0f0] text-[#9b4d6a] border-[#cda3b3]"
-            : "text-[#d87a6a] border-[#f0a07a] hover:bg-[#fff0f0]"
+            ? " bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold  "
+            : "bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline border-[#f0a07a] hover:bg-[#fff0f0]"
         }`}
       >
         <span>{faq.question}</span>
@@ -73,7 +73,7 @@ const DropDown = () => {
     <div className="relative bg-white flex items-center justify-center px-4 py-12 font-[Inter]">
       <img
         alt="Feather left"
-        className="absolute -left-48   mr-[130px] top-1/2 -translate-y-1/2 max-w-[450px] w-full h-[450px]  pointer-events-none select-none"
+        className="absolute -left-48 top-1/2 -translate-y-1/2 max-w-[450px] w-full h-[450px] pointer-events-none select-none z-[-10] sm:z-auto"
         src="/birdleft.png"
         style={{
           filter:
@@ -82,7 +82,7 @@ const DropDown = () => {
       />
       <img
         alt="Feather right"
-        className="absolute -right-20 bottom-0 w-[250px] h-[250px] pointer-events-none select-none"
+        className="absolute -right-20 bottom-0 w-[250px] h-[250px] pointer-events-none z-[-10]  sm:z-auto select-none"
         src="/birdright.png"
         style={{
           filter:
@@ -101,12 +101,12 @@ const DropDown = () => {
         <p className="text-[#6b6b6b] text-sm mb-8 px-4 sm:px-0">
           See below for frequently asked questions and if you need further
           assistance, please email:
-          <span className="inline-block bg-[#e6e1e1] rounded-md px-3 py-1 ml-1 text-[#d87a6a] font-medium">
+          <span className="inline-block bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline rounded-md px-3 py-1 ml-1 text-[#d87a6a] font-medium">
             tarini@thepankhproject.com
           </span>
         </p>
 
-        <div className="space-y-4 px-4 sm:px-0 text-left">
+        <div className="space-y-4 px-4 sm:px-0 text-left bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline">
           {faqs.map((faq, idx) => (
             <FAQItem
               key={idx}

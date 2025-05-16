@@ -1,5 +1,5 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css"; // Make sure this path is correct
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ApproachSection = () => {
   return (
@@ -11,7 +11,7 @@ const ApproachSection = () => {
         body {
           font-family: "Inter", sans-serif;
           overflow-x: hidden;
-          
+          justify-content: center;
         }
 
         .inner-shadow-bottom-right {
@@ -43,7 +43,6 @@ const ApproachSection = () => {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          
         }
 
         .text-albert {
@@ -60,15 +59,26 @@ const ApproachSection = () => {
             margin-bottom: 2rem !important;
           }
 
-          .w-[1400px] {
+          .w-[1700px],
+          .w-[1400px],
+          .w-[1280px],
+          .w-[1000px],
+          .w-9xl,
+          .max-w-6xl,
+          .max-w-4xl {
             width: 100% !important;
-            margin: 0 !important;
+            max-width: 100% !important;
+            margin: 0 auto !important;
             padding: 0 1rem !important;
           }
 
-          img.rounded-[40px] {
+          img.rounded-[20px],
+          img.rounded-[40px],
+          .flex.flex-col.sm\\:flex-row img {
             height: 300px !important;
+            width: 100% !important;
             margin-bottom: 1rem !important;
+            border-radius: 16px !important;
           }
 
           .text-[21px] {
@@ -78,8 +88,8 @@ const ApproachSection = () => {
 
           .text-3xl {
             font-size: 24px !important;
-            padding: 0 1rem !important;
             margin-top: 2rem !important;
+            padding: 0 1rem !important;
           }
 
           .gradient-border {
@@ -93,50 +103,41 @@ const ApproachSection = () => {
             margin-bottom: 1rem !important;
             max-width: 320px !important;
             margin: 0 auto !important;
-            padding: 1rem !important;
-            min-height: 200px !important;  /* Reduced height */
+            min-height: 200px !important;
           }
 
           .content p {
             font-size: 14px !important;
             line-height: 1.4 !important;
           }
-
-          .flex.flex-col.sm\:flex-row img {
-            height: 180px !important;
-            width: 100% !important;
-            border-radius: 16px !important;
-          }
-
-          .content {
-            max-width: 320px !important;
-            margin: 0 auto !important;
-            padding: 1rem !important;
-          }
-
-          .gradient-border {
-            gap: 1.5rem !important;
-          }
         }
 
         @media (max-width: 480px) {
-          img.rounded-[40px] {
-            height: 50px !important;
+          img.rounded-[20px],
+          img.rounded-[40px],
+          .flex.flex-col.sm\\:flex-row img {
+            height: 180px !important;
+            width: 100% !important;
+            margin-bottom: 1rem !important;
+            border-radius: 12px !important;
           }
 
           .text-[21px] {
             font-size: 14px !important;
+            padding: 0 0.5rem !important;
           }
 
           .text-3xl {
             font-size: 20px !important;
+            margin-top: 1.5rem !important;
+            padding: 0 0.5rem !important;
           }
 
           .content {
-            padding: 1rem !important;
-            max-width: 280px !important;
+            max-width: 580px !important;
             padding: 0.75rem !important;
-            min-height: 180px !important;  /* Further reduced for mobile */
+            min-height: 180px !important;
+            margin: 0 auto !important;
           }
 
           .content h4 {
@@ -145,7 +146,7 @@ const ApproachSection = () => {
           }
 
           .content i {
-            font-size: 24px !important;
+            font-size: 52px !important;
             margin-bottom: 0.5rem !important;
           }
 
@@ -154,17 +155,22 @@ const ApproachSection = () => {
             line-height: 1.3 !important;
           }
 
-          .flex.flex-col.sm\:flex-row img {
-            height: 150px !important;
-          }
-
-          .content {
-            max-width: 280px !important;
-            padding: 0.75rem !important;
-          }
-
           .gradient-border {
             gap: 1rem !important;
+            padding: 0 0.5rem !important;
+          }
+
+          h2.font-extrabold {
+            font-size: 20px !important;
+          }
+
+          /* ✅ Override gradient icons/text for mobile */
+          .content i,
+          .content h4 {
+            background: none !important;
+            -webkit-background-clip: initial !important;
+            -webkit-text-fill-color: white !important;
+            color: white !important;
           }
         }
       `}</style>
@@ -176,55 +182,52 @@ const ApproachSection = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none"
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 text-center text-white inner-shadow-bottom-right">
+      <div className="sm:px-6 lg:px-8 pt-10 pb-16 text-center text-white inner-shadow-bottom-right ml-64">
         <h2 className="font-extrabold text-[30px] mb-6">The Approach</h2>
 
         {/* Images */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto max-w-6xl">
-          <div className="w-full sm:w-[250px]">
+        <div className="flex flex-col w-[1700px] gap-10 sm:flex-row justify-center mb-8 max-w-6xl">
+          <div className="w-full sm:w-[950px]">
             <img
               src="/approach1.jpg"
               alt="Woman dancing"
-              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-[350px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
 
-          <div className="w-full sm:w-[500px]">
+          <div className="w-full sm:w-[1280px]">
             <img
               src="/approach2.jpg"
               alt="Arms raised"
-              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+              className="w-[650px] h-[350px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
 
-          <div className="w-full sm:w-[250px]">
+          <div className="w-full sm:w-[950px] mr-36">
             <img
               src="/approach3.jpg"
               alt="Green outfit"
-              className="w-full h-[250px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-[350px] rounded-[20px] object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
 
         {/* Paragraph */}
-        <div className="font-[#FFFFFFCC] w-full py-12  px-4 mr-31">
-          <div className="w-9xl  mx-auto space-y-1 text-center text-[21px]">
-            <p className=" text-gray-300">
+        <div className="font-[#FFFFFFCC] w-[1000px] py-12 mr-36">
+          <div className="w-9xl mx-auto space-y-1 text-center text-[21px]">
+            <p className="text-gray-300">
               At The Pankh Project, we believe healing involves your whole self.
               Your thoughts, feelings, physical
             </p>
-
-            <p className=" text-gray-300">
-              sensations, and energy are all connected.Our approach honours this
-              connection to help you find
+            <p className="text-gray-300">
+              sensations, and energy are all connected. Our approach honours
+              this connection to help you find
             </p>
-
-            <p className=" text-gray-300">
+            <p className="text-gray-300">
               balance and well-being. Our process is collaborative and tailored
               to you, aiming to help you feel
             </p>
-
-            <p className=" text-gray-300">
+            <p className="text-gray-300">
               more whole, balanced, and empowered on your unique journey.
             </p>
           </div>
@@ -234,13 +237,13 @@ const ApproachSection = () => {
         </div>
 
         {/* Cards */}
-        <div className="gradient-border flex flex-col sm:flex-row justify-center gap-6 max-w-4xl mx-auto px-2 sm:px-0">
+        <div className="gradient-border flex flex-col sm:flex-row justify-start gap-6 max-w-4xl mx-auto px-2 sm:px-0 mr-48">
           {/* Card 1 */}
           <div className="flex-1 max-w-sm mx-auto sm:mx-0">
             <div className="content text-center py-6 px-4">
               <div className="flex flex-col items-center justify-center mb-4">
-                <i className="fas fa-bolt text-4xl mb-3 bg-gradient-to-r from-[#FD8950] to-[#ffb17c] bg-clip-text text-transparent"></i>
-                <h4 className="text-xl font-bold bg-gradient-to-r from-[#FD8950] to-[#ffb17c] bg-clip-text text-transparent">
+                <i className="fas fa-bolt text-4xl mb-3 bg-gradient-to-r from-[#AA587C] to-[#FD8950] bg-clip-text text-transparent"></i>
+                <h4 className="text-xl font-bold bg-gradient-to-r from-[#AA587C] to-[#FD8950] bg-clip-text text-transparent">
                   Grounding in Your Strength
                 </h4>
               </div>
@@ -256,14 +259,8 @@ const ApproachSection = () => {
           <div className="flex-1 max-w-sm mx-auto sm:mx-0">
             <div className="content text-center py-6 px-4">
               <div className="flex flex-col items-center justify-center mb-4">
-                <i
-                  className="fas fa-feather-alt text-4xl mb-3 bg-gradient-to-r from-[#FD8950] to-[#ffb17c]
- bg-clip-text text-transparent"
-                ></i>
-                <h4
-                  className="text-xl font-bold bg-gradient-to-r from-[#FD8950] to-[#ffb17c]
- bg-clip-text text-transparent"
-                >
+                <i className="fas fa-feather-alt text-4xl mb-3 bg-gradient-to-r from-[#AA587C] to-[#FD8950] bg-clip-text text-transparent"></i>
+                <h4 className="text-xl font-bold bg-gradient-to-r from-[#AA587C] to-[#FD8950] bg-clip-text text-transparent">
                   Building Resilience
                 </h4>
               </div>
