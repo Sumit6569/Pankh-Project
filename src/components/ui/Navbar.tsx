@@ -7,11 +7,12 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md px-2 py-4 flex justify-between items-center">
       {/* Logo */}
+      {/* Logo */}
       <div className="flex items-center space-x-2 ml-2 sm:ml-12">
         <img
           src="/logo.png"
           alt="The Pankh Project Logo"
-          className="h-20 sm:h-16 w-auto"
+          className="h-32 sm:h-32 w-auto drop-shadow-lg brightness-525 contrast-150 saturate-150 "
         />
       </div>
 

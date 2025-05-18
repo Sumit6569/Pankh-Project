@@ -101,11 +101,14 @@ const BlogsSection = () => {
       </div>
 
       <div className="flex justify-center mt-10">
+       
         <button
-          type="button"
-          className="text-[#3B2F38] text-base font-medium rounded-full px-8 py-2 border border-[#9B5B6B] shadow-[0_0_10px_rgba(155,91,107,0.5)] hover:shadow-[0_0_15px_rgba(155,91,107,0.7)] transition-shadow"
+          className="mt-4 w-[160px] h-[50px] text-[#5B434E] text-[16px] font-semibold rounded-full border-[3px] border-[#AA587C]
+              bg-gradient-to-br from-[#FFF9FC] to-[#FDEEEE] shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]
+              transition duration-300 ease-in-out
+              hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
         >
-          View All
+          View All 
         </button>
       </div>
     </section>

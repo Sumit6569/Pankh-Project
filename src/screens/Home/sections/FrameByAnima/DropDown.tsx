@@ -98,10 +98,10 @@ const DropDown = () => {
         <h2 className="text-[#3f2f3f] font-semibold text-lg leading-6 mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-[#6b6b6b] text-sm mb-8 px-4 sm:px-0">
+        <p className="text-[#6b6b6b] text-sm mb-8 px-4 sm:px-0 flex flex-wrap items-center">
           See below for frequently asked questions and if you need further
           assistance, please email:
-          <span className="inline-block bg-gradient-to-r from-[#AA587C] to-[#FD8950]  bg-clip-text text-transparent font-semibold hover:underline rounded-md px-3 py-1 ml-1 text-[#d87a6a] font-medium">
+          <span className="inline-flex bg-gradient-to-r from-[#AA587C] to-[#FD8950] bg-clip-text text-transparent font-semibold hover:underline rounded-md px-3 py-1 ml-1">
             tarini@thepankhproject.com
           </span>
         </p>

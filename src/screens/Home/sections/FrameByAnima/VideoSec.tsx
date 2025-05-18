@@ -56,7 +56,6 @@ const VideoSec = () => {
         <iframe
           className="w-full aspect-video rounded-xl"
           src="https://www.youtube.com/embed/MY5SatbZMAo"
-
           title="The Pankh Project TEDx Talk video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -73,10 +72,16 @@ const VideoSec = () => {
         href="https://www.youtube.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block px-6 py-2 text-sm md:text-base font-semibold text-[#4a2c3a] rounded-full border border-[#a35a7a] hover:shadow-[0_0_12px_#a35a7a] transition-shadow duration-300 bg-white z-10"
-        style={{ boxShadow: "0 0 8px #a35a7a" }}
+       
       >
-        Go to Youtube
+        <button
+          className="mt-4 w-[160px] h-[50px] text-[#5B434E] text-[16px] font-semibold rounded-full border-[3px] border-[#AA587C]
+              bg-gradient-to-br from-[#FFF9FC] to-[#FDEEEE] shadow-[inset_-8px_-8px_30px_rgba(253,137,80,0.4),inset_8px_8px_16px_rgba(170,88,124,0.36)]
+              transition duration-300 ease-in-out
+              hover:bg-gradient-to-r hover:from-[#AA587C] hover:to-[#FD8950] hover:text-white hover:shadow-lg"
+        >
+          Go to YouTube
+        </button>
       </a>
 
       {/* Internal Styles */}
@@ -107,7 +112,7 @@ const VideoSec = () => {
   filter: blur(120px); /* smoother, more spread */
   z-index: 0;
 }
-
+  
       `}</style>
     </div>
   );
